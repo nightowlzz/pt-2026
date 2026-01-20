@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="웹 퍼블리셔 김미소의 포트폴리오입니다. HTML, CSS, jQuery를 활용한 웹 접근성 및 반응형 디자인 구현 능력을 확인하세요.">
+  <meta name="keywords" content="웹 퍼블리셔, HTML, CSS, jQuery, 반응형 웹, 웹 접근성, 포트폴리오">
+  <meta name="author" content="김미소">
+  <meta property="og:title" content="웹 퍼블리셔 포트폴리오">
+  <meta property="og:image" content="img/favicon-96x96.png">
+  <meta property="og:image:width" content="96">
+  <meta property="og:image:height" content="96">
+
+  <title>웹 퍼블리셔 포트폴리오</title>
+  <link rel="icon" href="img/favicon.ico" type="image/png">
+
+  <link rel="stylesheet" href="css/XEIcon-2.2.0/xeicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/index.js"></script>
+  <script defer src="js/gsap.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="hero-header">
+      <a href="/" class="logo">MS</a>
+      <nav class="side-menu">
+        <button class="btn-side-menu" aria-label="메뉴"><span></span></button>
+        <ul id="side-menu-list" class="side-menu-content" data-open="false">
+          <li><a href="#about" class="side-menu_link">about</a></li>
+          <li><a href="#skill" class="side-menu_link">skill</a></li>
+          <li><a href="#experience" class="side-menu_link">experience</a></li>
+          <li><a href="#footer" class="side-menu_link">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="container">
+        <section id="hero" class="hero-section">
+          <div class="inner hero-inner">
+            <h1 class="hero-title">
+              <span><em>Web Publisher</em><em>PORTFOLIO</em></span>
+            </h1>
+            <article class="hero-contact-box">
+              <span>tel.<a href="tel:01033867068">010.3386.7068</a></span>
+              <span>email.<a href="mailto:owl6068@naver.com">owl6068@naver.com</a></span>
+            </article>
+            <div class="hero-design-box">
+              <div class="circle-wrap">
+                <div class="circle-container">
+                  <span class="circle-in-text">PORTFOLIO</span>
+                  <svg class="circle-svg">
+                    <circle cx="50%" cy="50%" r="48%" pathLength="1"></circle>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="about-section">
+          <div class="inner about-inner">
+            <span class="double-quotes quotation-top">“</span>
+            <h2 class="about-title">ABOUT</h2>
+            <p>
+              에이전시와 인하우스의 유일한 퍼블리셔로서 기획과 디자인의 의도를 이해하고 실현해 왔습니다.
+              효율적인 DOM 구조를 설계하여 협업 프로세스를 단축시키는 데 집중하며, 웹 표준과 호환성을 놓치지 않는 결과물을 만들어 왔습니다.
+              단순히 시각적인 구현에 그치지 않고, 다음 단계의 개발자가 로직을 설계하기 편하도록 구조적인 마크업을 제공하는 것이 저의 역할이라 믿습니다.
+              프로젝트의 전 과정을 홀로 책임지며 일했기에 새로운 기술을 배우는 데 주저함이 없으며,
+              늘 더 효율적인 작업 방식을 고민합니다. 경험을 통해 얻은 유연함으로 팀의 흐름을 가장 매끄럽게 연결하며 조화롭게 기여하는 퍼블리셔가 되겠습니다.</p>
+            <span class="double-quotes quotation-btm">”</span>
+          </div>
+        </section>
+      </div>
+      <section id="skill" class="skill-section">
+        <div class="inner skill-inner">
+          <h2 class="sec-title  skill-title">SKILL</h2>
+          <ul class="skill-list">
+            <li class="js">
+              <strong>Js</strong>
+              <p>ES6+ 문법을 활용한 효율적인 로직 구현(화살표함수, 구조분해, 리터럴등)</p>
+              <p>DOM 조작 및 비동기 통신(Fetch, Axios)을 통한 동적 데이터 바인딩</p>
+            </li>
+            <li class="react">
+              <strong>React/Next</strong>
+              <p>SSR/SSG 환경의 특징을 이해하여 웹에 최적화 적용</p>
+              <p>컴포넌트 기반 설계를 통한 UI 재사용성 및 유지보수 용이하게 작업</p>
+              <p>프레임워크 환경에 최적화된 공통 UI 컴포넌트 마크업 수행</p>
+            </li>
+            <li class="typescript">
+              <strong>TypeScript</strong>
+              <p>정의된 타입을 바탕으로 런타임 에러를 고려한 안정적인 마크업 설계</p>
+              <p>인터페이스를 활용한 명확한 데이터 구조 이해</p>
+            </li>
+            <li class="vue">
+              <strong>Vue</strong>
+              <p>Vue 컴포넌트 라이프사이클에 대한 기본 이해 및 구조 분석</p>
+              <p>데이터 바인딩과 디렉티브를 활용한 동적 UI 구현 경험</p>
+            </li>
+            <li class="jquery">
+              <strong>Jquery</strong>
+              <p>오픈 소스 플러그인 활용 및 기존 레거시 코드 유지보수 가능</p>
+              <p>크로스 브라우징 이슈 해결 및 빠른 DOM 제어</p>
+            </li>
+            <li class="git">
+              <strong>Git</strong>
+              <p>버전 관리를 통한 안전한 코드 협업 환경 구축</p>
+              <p>원활한 코드 리뷰 및 협업</p>
+            </li>
+            <li class="html">
+              <strong>HTML</strong>
+              <p>웹 표준 및 시맨틱 마크업을 준수하여 구조적인 웹 페이지 설계</p>
+              <p>웹 접근성을 고려한 마크업 및 WAI-ARIA 활용 가능</p>
+              <p>SEO(검색 엔진 최적화)를 고려한 시맨틱 태그 구조 설계</p>
+            </li>
+            <li class="sass">
+              <strong>SASS/CSS</strong>
+              <p>SCSS 전처리기를 활용한 변수, Mixin, 함수 등 공통 가이드화 작업</p>
+              <p>유지보수가 용이한 CSS 방법론(BEM 등) 적용 가능</p>
+              <p>미디어 쿼리, 키프레임을 활용한 동적인 반응형 레이아웃 구현</p>
+            </li>
+            <li class="tailwind">
+              <strong>Tailwind CSS</strong>
+              <p>미리 정해진 클래스를 사용하여 빠른 UI 제작</p>
+              <p>불필요한 CSS 코드 최소화 및 디자인 시스템의 효율적 적용</p>
+            </li>
+            <li class="module">
+              <strong>CSS Modules</strong>
+              <p>클래스 네임 충돌 방지 및 컴포넌트 단위의 독립적 스타일링</p>
+              <p>유지보수가 편리한 모듈화된 CSS 환경 구축</p>
+            </li>
+            <li class="gsap">
+              <strong>Gsap</strong>
+              <p>ScrollTrigger를 활용한 고도화된 인터랙티브 웹 페이지 제작</p>
+              <p>Timeline 기반의 정교한 애니메이션 시퀀스 제어</p>
+            </li>
+            <li class="vite">
+              <strong>Vite</strong>
+              <p>Vite를 활용한 최신 개발 환경 구현 경험</p>
+            </li>
+            <li class="figma">
+              <strong>Figma</strong>
+              <p>디자인 시스템 가이드를 분석하여 정확한 수치로 구현</p>
+              <p>피그마 툴을 활용한 직접적인 수정 및 협업 가능</p>
+            </li>
+            <li class="zeplin">
+              <strong>Zeplin</strong>
+              <p>디자인 가이드를 확인하여 수치 기반의 정확한 마크업 구현</p>
+            </li>
+            <li class="slack">
+              <strong>Slack</strong>
+              <p>팀원 간 실시간 업무 공유 및 원활한 커뮤니케이션</p>
+            </li>
+            <li class="notion">
+              <strong>Notion</strong>
+              <p>프로젝트 일정 관리 및 문서화를 통한 원활한 커뮤니케이션</p>
+              <p>업무 히스토리 기록</p>
+            </li>
+            <li class="photoshop">
+              <strong>Photoshop</strong>
+              <p>디자인 시안 분석 및 웹용 이미지 최적화 저장</p>
+              <p>레이어 마스크 및 보정 기능을 활용한 소스 편집</p>
+            </li>
+            <li class="Illustrator">
+              <strong>Illustrator</strong>
+              <p>SVG 벡터 소스 추출 및 패스 수정을 통한 수정 작업</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="experience" class="experience-section">
+        <div class="inner experience-inner">
+          <h2 class="sec-title experience-title">EXPERIENCE</h2>
+          <div class="experience-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-bigfun">
+                <div class="slide-inner">
+                  <div class="experience-img-box">
+                    <img src="img/big.png" alt="YBM교과서이미지">
+                  </div>
+                  <div class="experience-info-box">
+                    <h3 class="company">빅펀티앤피</h3>
+                    <ul>
+                      <li><span><i class="xi-wrench"></i> 주요업무 :</span>
+                        <p>초등 5,6학년 영어·음악 디지털 교과서 인터랙티브 콘텐츠 퍼블리싱</p>
+                      </li>
+                      <li><span><i class="xi-calendar"></i> 근무기간 :</span>
+                        <p>2025.04 ~ 2025.10 (프리랜서)</p>
+                      </li>
+                      <li><span><i class="xi-chart-line"></i> 기여도 :</span>
+                        <p>영어:70% /음악 50%<br>(웹 표준 마크업 및 애니메이션 구현 담당) </p>
+                      </li>
+                    </ul>
+                    <div class="tag_word"><em>html</em><em>scss</em><em>js</em><em>figma</em><em>adobe animate</em><em>photoshop</em><em>Illustrator</em></div>
+                    <button type="button" class="btn-open" data-target="modal-bigfun">상세보기 <i class="xi-long-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide-allra">
+                <div class="slide-inner">
+                  <a href="https://allra.co.kr/" class="experience-img-box" target="_blank">
+                    <img src="img/allra.png" alt="올라사이트이미지">
+                  </a>
+                  <div class="experience-info-box">
+                    <h3 class="company">올라핀테크</h3>
+                    <ul>
+                      <li><span><i class="xi-building"></i> 회사소개 :</span>
+                        <p>소상공인 금융 혁신을 위한 선정산 플랫폼 및 매출 관리 솔루션</p>
+                      </li>
+                      <li><span><i class="xi-calendar"></i> 근무기간 :</span>
+                        <p>2022.10 ~ 2023.05</p>
+                      </li>
+                      <li><span><i class="xi-chart-line"></i> 기여도 :</span>
+                        <p>100%<br>(단독 퍼블리싱 및 UI 가이드 수립)</p>
+                      </li>
+                    </ul>
+                    <div class="tag_word"><em>html</em><em>scss</em><em>vueJs</em><em>figma</em><em>Git</em><em>Fork</em><em>Flow</em></div>
+                    <button type="button" class="btn-open" data-target="modal-allra">상세보기 <i class="xi-long-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide-kacelab">
+                <div class="slide-inner">
+                  <a href="https://www.kacelab.com/work" class="experience-img-box" target="_blank">
+                    <img src="img/kacelab.png" alt="케이스랩워크페이지이미지">
+                  </a>
+                  <div class="experience-info-box">
+                    <h3 class="company">케이스랩</h3>
+                    <ul>
+                      <li><span><i class="xi-building"></i> 회사소개 :</span>
+                        <p>다양한 산업군의 IT 서비스 구축 및 브랜드 웹사이트 퍼블리싱 에이전시</p>
+                      </li>
+                      <li><span><i class="xi-calendar xi-1x"></i>근무기간 :</span>
+                        <p>2022.01~2022.07</p>
+                      </li>
+                      <li><span><i class="xi-chart-line"></i> 기여도 :</span>
+                        <p>100%<br>(단독 퍼블리싱 및 크로스 브라우징 최적화)</p>
+                      </li>
+                    </ul>
+                    <div class="tag_word"><em>html</em><em>css/scss</em><em>js/jquery</em><em>zeplin</em><em>FileZilla</em><em>jira</em><em>가비아</em></div>
+                    <button type="button" class="btn-open" data-target="modal-caselab">상세보기 <i class="xi-long-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide-dibidibi">
+                <div class="slide-inner">
+                  <a href="https://www.dibidibi.com/" class="experience-img-box" target="_blank">
+                    <img src="img/dbdb.png" alt="디비디비쇼핑몰이미지">
+                  </a>
+                  <div class="experience-info-box">
+                    <h3 class="company">비알스톰</h3>
+                    <ul>
+                      <li><span><i class="xi-building"></i> 회사소개 :</span>
+                        <p>오픈마켓 플랫폼 '디비디비' 서비스 운영 및 이커머스 솔루션 제공</p>
+                      </li>
+                      <li><span><i class="xi-calendar xi-1x"></i>근무기간 :</span>
+                        <p>2020.11~2021.10 (계약직)</p>
+                      </li>
+                      <li><span><i class="xi-chart-line"></i> 기여도 :</span>
+                        <p>100%<br>(UI 고도화 및 플랫폼 유지보수)</p>
+                      </li>
+                    </ul>
+                    <div class="tag_word"><em>html</em><em>css/scss</em><em>js/jquery</em><em>photoshop</em><em>git</em><em>jira</em><em>slack</em></div>
+                    <button type="button" class="btn-open" data-target="modal-dbdb">상세보기 <i class="xi-long-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide-hak">
+                <div class="slide-inner">
+                  <div class="experience-img-box">
+                    <img src="img/hak.png" alt="학생독립만세페이지이미지">
+                  </div>
+                  <div class="experience-info-box">
+                    <h3 class="company">학생독립만세</h3>
+                    <ul>
+                      <li><span><i class="xi-building"></i> 회사소개 :</span>
+                        <p>교육 기회 불평등 해소를 위한 소득공유 후불제(ISA) 교육 금융 서비스</p>
+                      </li>
+                      <li><span><i class="xi-calendar xi-1x"></i>근무기간 :</span>
+                        <p>2020.08~2020.10 (인턴)</p>
+                      </li>
+                      <li><span><i class="xi-chart-line"></i> 기여도 :</span>
+                        <p>100% (신규 서비스 랜딩 페이지 퍼블리싱)</p>
+                      </li>
+                    </ul>
+                    <div class="tag_word"><em>html</em><em>css</em><em>js/jquery</em><em>zeplin</em><em>git</em><em>jira</em><em>slack</em></div>
+                    <button type="button" class="btn-open" data-target="modal-hak">상세보기 <i class="xi-long-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev xi-long-arrow-left"></div>
+            <div class="swiper-button-next xi-long-arrow-right"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <h2><span class="sr-only">문의처 및 개인 연락처</span>Contact.</h2>
+      <address>
+        <a href="tel:01033867068">010.3386.7068</a><br>
+        <a href="mailto:owl6068@naver.com">owl6068@naver.com</a>
+      </address>
+      <div class="footer-notice">
+        <p>&copy; 2026. 김미소. All rights reserved.</p>
+        <small>본 홈페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</small>
+      </div>
+    </footer>
+  </div>
+  <dialog id="modal-wrap" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="close-btn" aria-label="모달 닫기"><i class="xi-close"></i></button>
+
+      <div id="modal-bigfun" class="modal-content" aria-labelledby="title-bigfun">
+        <div class="modal-header">
+          <h2 id="title-bigfun">YBM 초등 5·6학년 디지털 교과서 (영어/음악)</h2>
+          <small>교육부 검인정 심사 기준 준수 및 최종 통과 프로젝트</small>
+        </div>
+
+        <div class="modal-body">
+          <div class="summary-box">
+            <p><strong>참여 기간:</strong> 2025. 04 ~ 2025. 11</p>
+            <p><strong>담당 업무:</strong> 디지털 교과서 웹 표준 퍼블리싱 및 음원 싱크 데이터 매핑 / QA</p>
+            <p><strong>사용 기술:</strong> HTML5, SCSS, JavaScript, WAI-ARIA, Adobe Animate, Figma, Photoshop, Illustrator</p>
+          </div>
+
+          <div class="work-content">
+            <div class="work-title">
+              <h3>1. [영어] 웹 접근성 피드백 반영 및 표준화</h3>
+              <div class="img-box"><img src="img/big-aria.png" alt="WAI-ARIA 적용 코드 예시"></div>
+            </div>
+            <ul class="detail-list">
+              <li>
+                <strong>표준 가이드 기반의 WAI-ARIA 적용:</strong>
+                전문 기관의 접근성 진단 항목을 분석하여 퀴즈, 탭 메뉴 등 복잡한 인터랙션 요소에 <code>role</code>, <code>aria-label</code> 등의 속성을 기술적으로 구현했습니다.
+              </li>
+              <li>
+                <strong>스크린 리더 최적화 및 구조 보완:</strong>
+                NVDA로 스크린 리더 검수 결과에 따라 비논리적인 마크업 순서를 재배치하고, 숨김 텍스트(IR 기법) 및 키보드 초점(Focus) 이동 로직을 보완하여 사용자 접근성을 높였습니다.
+              </li>
+              <li>
+                <strong>품질 인증 심사 대응:</strong>
+                교육부의 까다로운 품질 인증 기준을 충족하기 위해 수백 페이지 분량의 콘텐츠를 전수 점검하고, 마크업 결함을 실시간으로 수정하여 프로젝트의 최종 합격에 기여했습니다.
+              </li>
+            </ul>
+          </div>
+
+          <div class="work-content">
+            <div class="work-title">
+              <h3>2. [음악] SVG 및 초 단위 데이터를 활용한 인터랙티브 작업</h3>
+              <div class="img-box"><img src="img/big-animate.jpg" alt="음원 싱크 프로세스"></div>
+            </div>
+            <ul class="detail-list">
+              <li>
+                <strong>인터랙티브 기능을 위한 레이아웃 정리</strong>
+                <span>음원 싱크가 에러 없이 작동하도록, 일러스트 파일을 SVG로 변환하는 과정에서 그룹화와 객체 순서를 해당 기능에 맞춰 재정리했습니다.</span>
+              </li>
+              <li>
+                <strong>시간 데이터 추출 및 맵핑</strong>
+                <span>Adobe Animate에서 동작 에러를 수정하고, 음원과 시각 효과가 어긋나지 않도록 프레임을 조정했습니다. 이후 추출한 초 단위 시간 데이터(Array)를 SVG 코드와 연결하여 페이지를 완성했습니다.</span>
+              </li>
+              <li>
+                <strong>음원 전수 검수 및 확인</strong>
+                <span>가사 하이라이트, 따라부르기, 계이름 반응 등이 정확한 타이밍에 작동하는지 모든 음원을 전수 검토하며 최종 사용자 경험의 완성도를 높였습니다.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-allra" class="modal-content" aria-labelledby="title-allra">
+        <div class="modal-header">
+          <h2 id="title-allra">선정산 서비스 '올라(Allra)' 플랫폼 고도화 및 운영</h2>
+          <small>핀테크 기반 이커머스 선정산 서비스</small>
+        </div>
+
+        <div class="modal-body">
+          <div class="summary-box">
+            <p><strong>참여 기간:</strong> 2022. 10 ~ 2023. 05</p>
+            <p><strong>담당 업무:</strong> Vue.js 기반 플랫폼 전체 퍼블리싱 및 UI/UX 개선</p>
+            <p><strong>사용 기술:</strong> Vue.js, SCSS, JavaScript, Git/Fork, Figma, GitHub, Flow</p>
+          </div>
+
+          <div class="work-content">
+            <div class="work-title">
+              <h3>1. 서비스 정책 개편 및 인증 UX 최적화</h3>
+              <div class="img-box"><img src="img/allra-01.png" alt="올라 수수료 변경 공지"></div>
+            </div>
+            <ul class="detail-list">
+              <li>
+                <strong>수수료 정책 변경 반영:</strong>
+                변경된 수수료 정책에 맞춰 유저가 시점별 정산금을 오해 없이 확인할 수 있도록 거래내역 조회 페이지 전반을 새롭게 개편했습니다.
+              </li>
+              <li>
+                <strong>인증 프로세스 최적화 제안 (완료율 30% 증가):</strong>
+                선정산 계약 과정 중 이탈을 줄이기 위해 <b>인증 단계의 배치 시점(마지막 단계 추가)을 제안</b>하였고, 이것이 실제 UI에 반영되었습니다. 결과적으로 중도 이탈률이 낮아지며 최종 신청 완료율이 30% 증가하는 성과를 거두었습니다.
+              </li>
+            </ul>
+          </div>
+
+          <div class="work-content">
+            <div class="work-title">
+              <h3>2. 제휴 서비스 연동 및 '올라 장부' 신규 구축</h3>
+              <div class="img-box"><img src="img/allra-02.png" alt="올라장부페이지이미지"></div>
+            </div>
+            <ul class="detail-list">
+              <li>
+                <strong>외부 제휴용 간편 조회 페이지 구현:</strong>
+                제휴 채널 확장 계획에 따라, 멸치쇼핑 등 외부 사이트 내에 삽입될 iframe 형태의 전용 조회 페이지를 퍼블리싱했습니다.
+              </li>
+              <li>
+                <strong>'올라 장부' 매출 관리 사이트 구축:</strong>
+                쇼핑몰 통합 매출 데이터를 시각화하는 신규 서비스를 작업했습니다. 방대한 데이터를 표와 그래프로 명확히 보여주기 위해 Flex와 Grid를 활용해 전체 페이지를 구축했습니다.
+              </li>
+            </ul>
+          </div>
+
+          <div class="work-content">
+            <h3 class="work-title">3. 기획팀 소속의 강점을 살린 빠른 UI 검증</h3>
+            <ul class="detail-list">
+              <li>
+                <strong>실시간 UI 수정 및 검증:</strong>
+                기획 회의에서 결정된 버튼 위치나 문구 수정 등 가벼운 UI 개선안은 Vue 컴포넌트에서 직접 수정하여 서비스 반영 속도를 높였습니다.
+              </li>
+              <li>
+                <strong>현장 피드백의 즉각적 반영:</strong>
+                킨텍스 박람회 현장에서 유저들이 태블릿 가입 시 겪는 불편함을 직접 관찰했습니다. 이를 바탕으로 모바일 환경에 최적화된 UI 수정안을 논의하고 작업에 반영했습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-caselab" class="modal-content" aria-labelledby="title-caselab">
+        <div class="modal-header">
+          <h2 id="title-caselab">코오롱 사내 시스템 및 듀오백 등 사이트 구축/운영</h2>
+          <small>애자일 기반의 빠른 호흡으로 진행된 신규 구축 및 운영 프로젝트</small>
+        </div>
+
+        <div class="modal-body">
+          <div class="summary-box">
+            <p><strong>참여 기간:</strong> 2022. 01 ~ 2022. 07</p>
+            <p><strong>담당 업무:</strong> 신규 서비스 단독 퍼블리싱 및 브랜드 사이트 운영/유지보수</p>
+            <p><strong>사용 기술:</strong> HTML5, CSS3, JavaScript, jQuery, FileZilla, Zeplin, Jira, Slack</p>
+          </div>
+
+          <div class="work-content">
+            <h3 class="work-title">1. 애자일 환경에 유연한 대응으로 기한 내 서비스 구축 및 운영</h3>
+            <ul class="detail-list">
+              <li>
+                <strong>기획·디자인 병행 환경에서의 신속 구축:</strong>
+                기획과 디자인이 확정되는 대로 즉시 퍼블리싱에 착수하여 프로젝트 일정을 준수했습니다. 코오롱 사내 차량 관리, 콜버스 등 구축 시 빠른 개발 템포에 맞춰 효율적으로 대응했습니다.
+              </li>
+              <li>
+                <strong>잦은 수정 요구사항의 완벽 소화:</strong>
+                에이전시 특유의 빈번한 디자인 수정에도 불구하고, 마감 기한 내에 모든 작업을 완료했습니다. 반복되는 수정 과정에서도 화면 오차가 발생하지 않도록 꼼꼼하게 검수하며 작업했습니다.
+              </li>
+              <li>
+                <strong>퍼블리싱 소스 직접 배포 및 관리:</strong>
+                가비아 서버 환경에서 FileZilla를 활용해 퍼블리싱 결과물을 직접 배포했습니다. 듀오백 등 운영 사이트의 유지보수 시, 서버 내 파일 경로와 정합성을 확인하며 누락 없는 안정적인 업데이트를 수행했습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-dbdb" class="modal-content" aria-labelledby="title-dbdb">
+        <div class="modal-header">
+          <h2 id="title-dbdb">커머스 플랫폼 '디비디비' UI/UX 전면 리뉴얼</h2>
+          <small>사이트 개편 전담 퍼블리싱 및 신규 커머스 기능 구축</small>
+        </div>
+
+        <div class="modal-body">
+          <div class="summary-box">
+            <p><strong>참여 기간:</strong> 2020. 11 ~ 2021. 10</p>
+            <p><strong>담당 업무:</strong> 커머스 플랫폼 전면 리뉴얼 퍼블리싱 및 신규 기능 UI 구축</p>
+            <p><strong>사용 기술:</strong> HTML5, CSS3, JavaScript, jQuery, Photoshop, Jira</p>
+          </div>
+
+          <div class="work-content">
+            <div class="work-title">
+              <h3>1. 플랫폼 전면 리뉴얼 및 신규 기능 구축/유지보수</h3>
+              <div class="img-box"><img src="img/dbdb-01.png" alt="디비디비선물하기기능이미지"></div>
+            </div>
+            <ul class="detail-list">
+              <li>
+                <strong>사이트 전 페이지 약 80% 리뉴얼 전담:</strong>
+                전면 개편 프로젝트에 투입되어, 기존 사이트의 약 80%에 해당하는 페이지를 디자인 시안에 맞춰 새로 퍼블리싱했습니다.
+              </li>
+              <li>
+                <strong>스타일 가이드 준수 및 시각적 통일성 확보:</strong>
+                리뉴얼 과정에서 정해진 스타일 가이드를 전 페이지에 동일하게 적용하여 사이트의 시각적 통일감을 유지하고 유지보수가 가능하도록 마크업을 정리했습니다.
+              </li>
+              <li>
+                <strong>커머스 핵심 신규 기능 UI 구현:</strong>
+                '선물하기', '쿠폰 시스템', '이벤트 페이지' 등 기획된 신규 기능들의 UI를 구축했습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-hak" class="modal-content" aria-labelledby="title-hak">
+        <div class="modal-header">
+          <h2 id="title-hak">에듀테크 플랫폼 '학생독립만세' 운영 및 구축</h2>
+          <small>사용자 편의성을 고려한 신규 기능 구현 및 크로스 브라우징 최적화 (인턴)</small>
+        </div>
+
+        <div class="modal-body">
+          <div class="summary-box">
+            <p><strong>참여 기간:</strong> 2020. 08 ~ 2020. 10 (3개월)</p>
+            <p><strong>담당 업무:</strong> 서비스 주요 기능 UI 퍼블리싱 및 크로스 브라우징 검수</p>
+            <p><strong>사용 기술:</strong> HTML5, CSS3, JavaScript, jQuery, GitLab, Zeplin, Notion, Slack</p>
+          </div>
+
+          <div class="work-content">
+            <h3 class="work-title">1. 사용자 편의 기능 구축 및 기기별 최적화</h3>
+            <ul class="detail-list">
+              <li>
+                <strong>사용자 자가 측정 계산기 UI 퍼블리싱:</strong>
+                단순 정보 나열 방식에서 벗어나 유저가 직접 수치를 입력해 결과를 확인하는 계산기 UI를 구현했습니다. 이를 통해 유저의 자발적 정보 획득을 돕고 운영 측면의 단순 문의(CS)를 줄이는 효과를 거두었습니다.
+              </li>
+              <li>
+                <strong>비대면 서류 제출 시스템 구축 지원:</strong>
+                기존 오프라인 방식(팩스)을 대체하는 온라인 파일 업로드 시스템의 사용자 및 관리자 UI 퍼블리싱을 담당했습니다. 실무 프로세스의 디지털 전환 과정을 경험하며 인터랙션 설계의 중요성을 익혔습니다.
+              </li>
+              <li>
+                <strong>멀티 디바이스 웹 호환성 검수 및 수정:</strong>
+                다양한 모바일 기기와 브라우저 환경에서의 레이아웃 정합성을 검수했습니다. 실제 기기 테스트를 통해 발견된 미세한 오차를 1px 단위로 수정하며 크로스 브라우징 최적화 역량을 길렀습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+</body>
+
+</html>

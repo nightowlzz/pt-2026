@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/**
+ * @file _variables.scss => variables.css
+ * @description 사이트 공통으로 사용할 변수(색상, 폰트, 여백, 브레이크포인트 등) 정의
+ */
+
+/*  --------------- font ---------------  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+  font-family: 'S-CoreDream-9Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*  --------------- variable ---------------  */
+
+// color
+$color-orange: #ed5a12;
+$color-blue: #0a45c7;
+$color-white: #fefefe;
+$color-black: #222;
+$color-gray: #797979;
+
+// width
+$w-tablet: 1160px;
+$w-mobile: 765px;
+$full: 100%;
+$half: 50%;
+
+// z-index
+$z-header: 50;
+$z-header-close: 51;
+$z-modal: 100;

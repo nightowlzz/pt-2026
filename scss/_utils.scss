@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+@use '_variables' as var;
+
+/**
+ * @file _utils.scss => utils.css
+ * @description 공통 유틸리티 및 키프레임
+ */
+
+/*  --------------- Mixin ---------------  */
+
+/* 사용법 : @include pos(위치:필수작성, 포지션타입:기본값, 개별위치수정); => @include pos('bc', fixed, $bottom: 20px); */
+@mixin position($offset, $type: absolute, $top: null, $left: null, $right: null, $bottom: null, $translate: null) {
+  position: $type;
+
+  @if $offset == 'tl' {
+    top: 0;
+    left: 0;
+  } @else if $offset == 'tc' {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if $offset == 'tr' {
+    top: 0;
+    right: 0;
+  } @else if $offset == 'ml' {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  } @else if $offset == 'mc' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if $offset == 'mr' {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  } @else if $offset == 'bl' {
+    bottom: 0;
+    left: 0;
+  } @else if $offset == 'bc' {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if $offset == 'br' {
+    bottom: 0;
+    right: 0;
+  } @else {
+    @if $top != null {
+      top: $top;
+    }
+    @if $left != null {
+      left: $left;
+    }
+    @if $right != null {
+      right: $right;
+    }
+    @if $bottom != null {
+      bottom: $bottom;
+    }
+    @if $translate != null {
+      transform: $translate;
+    }
+  }
+}
+/* ------------------------ keyframe ------------------------ */
+
+// hero 선그리기
+@keyframes circleLineDraw {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+// hero 원형 안에 텍스트 숨기기
+@keyframes circleInText {
+  10% {
+    color: transparent;
+  }
+  80% {
+    color: var.$color-black;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+// about quotes
+@keyframes quotesFadeIn {
+  to {
+    opacity: 1;
+  }
+}
