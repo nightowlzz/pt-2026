@@ -151,10 +151,8 @@ const PortfolioManager = {
   lockScroll(isLock) {
     if (isLock) {
       this.savedScrollY = window.pageYOffset;
-      document.body.classList.add('is-locked');
       document.body.style.top = `-${this.savedScrollY}px`;
     } else {
-      document.body.classList.remove('is-locked');
       document.body.style.top = '';
       window.scrollTo(0, this.savedScrollY);
     }
