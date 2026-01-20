@@ -393,7 +393,7 @@ body {
     }
   }
 }
-@media (max-width: var.$w-mobile) {
+@media (max-width: var.$w-mobile) { 
   .about {
     &-title {
       font-size: 2rem;

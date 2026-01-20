@@ -84,7 +84,7 @@ const introAni = gsap.timeline();
     .to('.anim-word', { opacity: 1, y: 0, stagger: { amount: 1.5, from: 'random' }, duration: 2, ease: 'power2.out' });
 
   ScrollTrigger.create({
-    id: 'about',
+    id: 'about', 
     animation: introAni,
     trigger: '.hero-section',
     start: 'top top',
