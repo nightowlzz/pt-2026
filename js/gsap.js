@@ -78,8 +78,8 @@ const introAni = gsap.timeline();
     .to('.hero-section', { scale: 50, z: 350, transformOrigin: 'center', ease: 'power1.inOut', duration: 2 })
     .to('.about-section', { scale: 1, ease: 'power1.inOut', duration: 2 }, '<')
     .to('.hero-section', { opacity: 0, zIndex: -1, duration: 0.1 })
-    .fromTo('.quotation-top', { top: '47.5%', opacity: 0 }, { top: 0, opacity: 1, duration: 1, ease: "power2.out" })
-    .fromTo('.quotation-btm', { bottom: '47.5%', opacity: 0 }, { bottom: 0, opacity: 1, duration: 1, ease: "power2.out" })
+    .to('.quotation-top', { top: 0, opacity: 1, duration: 1, ease: "power2.out" })
+    .to('.quotation-btm', { bottom: 0, opacity: 1, duration: 1, ease: "power2.out" })
     .fromTo('.about-title', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1 })
     .to('.anim-word', { opacity: 1, y: 0, stagger: { amount: 1.5, from: 'random' }, duration: 2, ease: 'power2.out' });
 
@@ -94,58 +94,6 @@ const introAni = gsap.timeline();
     anticipatePin: 1,
     invalidateOnRefresh: true,
   });
-
-  // 1. matchMedia 생성
-  // let mm = gsap.matchMedia();
-
-  // mm.add(
-  //   {
-  //     isDesktop: '(min-width: 1161px)',
-  //     isTablet: '(max-width: 1160px) and (min-width: 766px)',
-  //     isMobile: '(max-width: 765px)',
-  //   },
-  //   (context) => {
-  //     let { isTablet, isMobile } = context.conditions;
-
-  //     // 1. calc 대신 직접 px 값을 계산하는 함수 (리사이즈 대응)
-  //       const getTopStart = () => {
-  //         const vh = window.innerHeight;
-  //         if (isMobile) return (vh * 0.5) - 25;
-  //         if (isTablet) return (vh * 0.5) - 30;
-  //         return (vh * 0.5) - 35;
-  //       };
-
-  //       const getBtmStart = () => {
-  //         const vh = window.innerHeight;
-  //         return isMobile ? (vh * 0.5) - 34 : (vh * 0.5) - 36;
-  //       };
-        
-  //       console.log('getTopStart=', getTopStart);
-  //       console.log('getBtmStart=', getBtmStart);
-  //     const introAni = gsap.timeline();
-  //     introAni
-  //       .to('.hero-section', { scale: 50, z: 350, transformOrigin: 'center', ease: 'power1.inOut', duration: 2 })
-  //       .to('.about-section', { scale: 1, ease: 'power1.inOut', duration: 2 }, '<')
-  //       .to('.hero-section', { opacity: 0, zIndex: -1, duration: 0.1 })
-  //       .fromTo('.quotation-top', { top: getTopStart, opacity: 0 }, { top: 0, opacity: 1, duration: 1, ease: 'power2.out' })
-  //       .fromTo('.quotation-btm', { bottom: getBtmStart, opacity: 0 }, { bottom: 0, opacity: 1, duration: 1, ease: 'power2.out' },"<")
-  //       .fromTo('.about-title', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1 })
-  //       .to('.anim-word', { opacity: 1, y: 0, stagger: { amount: 1.5, from: 'random' }, duration: 2, ease: 'power2.out' });
-
-  //     // 4. ScrollTrigger 생성
-  //     ScrollTrigger.create({
-  //       id: 'about',
-  //       animation: introAni,
-  //       trigger: '.hero-section',
-  //       start: 'top top',
-  //       end: '+=2000',
-  //       scrub: 1.5,
-  //       pin: '.container',
-  //       anticipatePin: 1,
-  //       invalidateOnRefresh: true,
-  //     });
-  //   },
-  // );
 
   // -----------------------------------------------------------
   // 3. [Skill 섹션]

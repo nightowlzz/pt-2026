@@ -52,7 +52,7 @@ body {
 @media (max-width: var.$w-mobile) {
   .main-container {
     .inner {
-      padding: 60px 20px 20px;
+      padding: 60px 20px;
       .sec-title {
         font-size: 25vw;
       }
@@ -333,7 +333,6 @@ body {
 /* ------------------------ About ------------------------ */
 .about {
   &-section {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -348,6 +347,7 @@ body {
   }
   &-inner {
     &.inner {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -373,16 +373,23 @@ body {
       }
     }
     .double-quotes {
-      height: 44px;
+      position: absolute;
+      left: 50%;
+      height: 40px;
       font-size: 7rem;
       line-height: 1;
-      color: var.$color-blue;
       opacity: 0;
       font-family: 'S-CoreDream-9Black', sans-serif;
       animation: quotesFadeIn 0.2s 3s ease-out both;
-      transform: translateX(-50%);
-      position: absolute;
-      left: 50%;
+      color: var.$color-blue;
+      &.quotation-top {
+        top: 50%;
+        transform: translate(-50%, calc(-50% - 9px));
+      }
+      &.quotation-btm {
+        bottom: 50%;
+        transform: translate(-50%, calc(-50% + 46px));
+      }
     }
   }
 }
@@ -390,6 +397,7 @@ body {
   .about {
     &-title {
       font-size: 2rem;
+      margin-top: 0;
       margin-bottom: 10px;
     }
     &-inner {
@@ -397,7 +405,13 @@ body {
         font-size: 1rem;
       }
       .double-quotes {
-        font-size: 5.5rem;
+        font-size: 6rem;
+        &.quotation-top {
+          transform: translate(-50%, calc(-50% - 12px));
+        }
+        &.quotation-btm {
+          transform: translate(-50%, calc(-50% + 52px));
+        }
       }
     }
   }

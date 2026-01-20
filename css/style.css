@@ -95,7 +95,7 @@ body {
 }
 @media (max-width: 765px) {
   .main-container .inner {
-    padding: 60px 20px 20px;
+    padding: 60px 20px;
   }
   .main-container .inner .sec-title {
     font-size: 25vw;
@@ -369,7 +369,6 @@ body {
 }
 /* ------------------------ About ------------------------ */
 .about-section {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,6 +382,7 @@ body {
   opacity: 0;
 }
 .about-inner.inner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -408,28 +408,42 @@ body {
   display: inline-block;
 }
 .about-inner .double-quotes {
-  height: 44px;
+  position: absolute;
+  left: 50%;
+  height: 40px;
   font-size: 7rem;
   line-height: 1;
-  color: #0a45c7;
   opacity: 0;
   font-family: "S-CoreDream-9Black", sans-serif;
   animation: quotesFadeIn 0.2s 3s ease-out both;
-  transform: translateX(-50%);
-  position: absolute;
-  left: 50%;
+  color: #0a45c7;
+}
+.about-inner .double-quotes.quotation-top {
+  top: 50%;
+  transform: translate(-50%, calc(-50% - 9px));
+}
+.about-inner .double-quotes.quotation-btm {
+  bottom: 50%;
+  transform: translate(-50%, calc(-50% + 46px));
 }
 
 @media (max-width: 765px) {
   .about-title {
     font-size: 2rem;
+    margin-top: 0;
     margin-bottom: 10px;
   }
   .about-inner p {
     font-size: 1rem;
   }
   .about-inner .double-quotes {
-    font-size: 5.5rem;
+    font-size: 6rem;
+  }
+  .about-inner .double-quotes.quotation-top {
+    transform: translate(-50%, calc(-50% - 12px));
+  }
+  .about-inner .double-quotes.quotation-btm {
+    transform: translate(-50%, calc(-50% + 52px));
   }
 }
 /* ------------------------ Skill ------------------------ */
