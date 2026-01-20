@@ -97,7 +97,7 @@ window.addEventListener('load', () => {
         .to('.about-section', { scale: 1, ease: 'power1.inOut', duration: 2 }, '<')
         .to('.hero-section', { opacity: 0, zIndex: -1, duration: 0.1 })
         .fromTo('.quotation-top', { top: topVal, opacity: 0 }, { top: 0, opacity: 1, duration: 1, ease: 'power2.out' })
-        .fromTo('.quotation-btm', { bottom: btmVal, opacity: 0 }, { bottom: 0, opacity: 1, duration: 1, ease: 'power2.out' })
+        .fromTo('.quotation-btm', { bottom: btmVal, opacity: 0 }, { bottom: 0, opacity: 1, duration: 1, ease: 'power2.out' },"<")
         .fromTo('.about-title', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1 })
         .to('.anim-word', { opacity: 1, y: 0, stagger: { amount: 1.5, from: 'random' }, duration: 2, ease: 'power2.out' });
 

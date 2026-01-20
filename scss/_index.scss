@@ -157,6 +157,7 @@ body {
         visibility: visible;
         a {
           font-size: 1.3rem;
+          margin-bottom: 30px;
           color: var.$color-white;
         }
       }
@@ -188,9 +189,6 @@ body {
     right: 20px;
     &-content {
       width: 250px;
-      a {
-        margin-bottom: 30px;
-      }
     }
   }
 }
@@ -199,7 +197,7 @@ body {
   &-section {
     @include position('', $top: 0, $left: 0, $right: 0);
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     perspective: 500px;
     overflow: hidden;
     z-index: 2;
@@ -338,7 +336,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100svh;
     transform: scale(0.8);
   }
   &-title {
