@@ -89,18 +89,17 @@ window.addEventListener('load', () => {
       // 1. calc 대신 직접 px 값을 계산하는 함수 (리사이즈 대응)
         const getTopStart = () => {
           const vh = window.innerHeight;
-          if (isMobile) return (vh * 0.5) - 25;
-          if (isTablet) return (vh * 0.5) - 30;
           return (vh * 0.5) - 35;
         };
 
         const getBtmStart = () => {
           const vh = window.innerHeight;
-          return isMobile ? (vh * 0.5) - 34 : (vh * 0.5) - 36;
+          return isMobile ? (vh * 0.5) - 40 : (vh * 0.5) - 35;
         };
         
+        console.log('getTopStart=', getTopStart);
+        console.log('getBtmStart=', getBtmStart);
       const introTl = gsap.timeline();
-      
       introTl
         .to('.hero-section', { scale: 50, z: 350, transformOrigin: 'center', ease: 'power1.inOut', duration: 2 })
         .to('.about-section', { scale: 1, ease: 'power1.inOut', duration: 2 }, '<')
