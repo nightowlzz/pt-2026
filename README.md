@@ -4,7 +4,7 @@
 ---
 
 ## 🚀 바로가기
-- **배포 URL:** [https://]
+- **배포 URL:** [https://pt-2026-ms.vercel.app/](https://pt-2026-ms.vercel.app/)
 - **주요 역량:** 시맨틱 마크업, WAI-ARIA 기반 웹 접근성, GSAP 인터랙티브 구현, 유지보수가 용이한 공통 UI 설계
 
 ---
@@ -14,11 +14,9 @@
 ### Frontend & Library
 - **Markup:** HTML5 (Semantic Markup), WAI-ARIA
 - **Styling:** CSS3, SCSS (Mixin, Variable 활용), Flex
-- **Scripting:** JavaScript, jQuery
+- **Scripting:** JavaScript
 - **Animation:** GSAP (ScrollTrigger, ScrollToPlugin)
 - **Library:** Swiper.js
-
-### Tools & Collaboration
 - **DevOps:** Git, GitHub
 
 ## 📁 Project Structure
