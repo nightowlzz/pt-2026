@@ -78,8 +78,8 @@ const introAni = gsap.timeline();
     .to('.hero-section', { scale: 50, z: 350, transformOrigin: 'center', ease: 'power1.inOut', duration: 2 })
     .to('.about-section', { scale: 1, ease: 'power1.inOut', duration: 2 }, '<')
     .to('.hero-section', { opacity: 0, zIndex: -1, duration: 0.1 })
-    .to('.quotation-top', { top: 0, opacity: 1, duration: 1, ease: "power2.out" })
-    .to('.quotation-btm', { bottom: 0, opacity: 1, duration: 1, ease: "power2.out" })
+    .fromTo('.quotation-top', {clearProps:"top"},{ top: 0, opacity: 1, duration: 1, ease: "power2.out" })
+    .fromTo('.quotation-btm', {clearProps:"bottom"},{ bottom: 0, opacity: 1, duration: 1, ease: "power2.out" })
     .fromTo('.about-title', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1 })
     .to('.anim-word', { opacity: 1, y: 0, stagger: { amount: 1.5, from: 'random' }, duration: 2, ease: 'power2.out' });
 
