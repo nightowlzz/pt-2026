@@ -369,6 +369,7 @@ body {
 }
 /* ------------------------ About ------------------------ */
 .about-section {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,7 +383,6 @@ body {
   opacity: 0;
 }
 .about-inner.inner {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,7 +391,6 @@ body {
   margin: 0 auto;
   max-width: 1160px;
   width: 100%;
-  padding: 80px 0;
 }
 .about-inner p {
   line-height: 1.4;
